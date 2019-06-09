@@ -219,8 +219,11 @@ a {
   color: teal;
   font-size: 1em;
 }
+table {
+}
 table.simple td {
   padding: 10px;
+  border: 1px solid black;
 }
 table.simple td:nth-child(1) {
   text-align: right;
@@ -295,7 +298,7 @@ input[type="email"],
 }
 select {
   /* margin: 50px; */
-  width: 150px;
+  width: 350px;
   padding: 5px 35px 5px 5px;
   font-size: 16px;
   border: 2px solid teal;
@@ -466,4 +469,10 @@ a.toggle-vis {
 }
 [v-cloak] {
   display: none;
+}
+
+/* Froala Editor */
+.fr-box.fr-basic {
+  border: 2px solid teal;
+  margin-bottom: 20px;
 }
