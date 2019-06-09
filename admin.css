@@ -255,7 +255,7 @@ a {
 .content {
   grid-area: content;
   padding: 20px 20px 20px 40px;
-  width: 1060px;
+  width: 90%;
 }
 .login {
   width: 350px;
@@ -339,6 +339,10 @@ input[type="text"].narrow {
   width: 100px;
 }
 
+.spacing {
+  padding-bottom: 50px;
+}
+
 .red_bold {
   color: red;
   font-weight: bold;
@@ -385,4 +389,52 @@ input[type="text"].narrow {
 
 .clear {
   clear: both;
+}
+
+/* fix css dataTable */
+td {
+  text-align: center;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+  padding: 10px;
+  height: 38px;
+  border: 2px solid teal;
+  min-width: 200px;
+  font-size: 14px;
+  box-shadow: 4px 4px 20px rgba(155, 158, 157, 0.85);
+}
+
+.dataTables_filter {
+  margin-bottom: 10px;
+}
+
+select[name="myTable_length"] {
+  width: 80px;
+}
+
+select[name="tabling_length"] {
+  width: 80px;
+}
+
+.dataTables_length select {
+  width: 55px;
+}
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc {
+  font-weight: normal;
+}
+
+a.toggle-vis {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.dataTables_paginate,
+.dataTables_info {
+  margin-top: 10px;
+}
+[v-cloak] {
+  display: none;
 }
